@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daftar Absensi Tugas</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+
+
+<nav>
+    <ul class="navbar">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li class="dropdown" onmouseover="showDropdown()">
+        <a href="#" class="dropbtn">Pilih Web &#9662;</a>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="index.HTML">Website 1</a>
+                <a href="index2.html">Website 2</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="Home">
+    <div class="Content">
+    <h2>Absensi Berlaku Untuk Yang Sudah Mengerjakan</h2>
+    <p>"Kesungguhanmu dalam mengerjakan tugas ini telah menggetarkan hatiku.
+        Dengan penuh kegigihan dan kecakapan, kamu telah menciptakan karya yang memukau.
+        Setiap detik yang kau curahkan di dalamnya seperti sebuah melodi yang mengalun indah.
+        Terima kasih, mahasiswa tercinta, karena telah menghiasi perjalanan akademikku dengan cahaya keberhasilanmu."</p>
+    </div>
+</div>
+<div class="container">
+    <h2>Masukkan Absensi di sini</h2>
+    <form id="form">
+        <input type="text" id="no" placeholder="No">
+        <input type="text" id="name" placeholder="Nama Lengkap">
+        <input type="text" id="nim" placeholder="NIM">
+        <input type="text" id="jurusan" placeholder="Jurusan">
+        <button type="button" onclick="addData()">Tambah</button>
+    </form>
+    <h2>Daftar Absensi</h2>
+    <table id="attendance">
+        <thead>
+             <tr>
+             <th>No.</th>
+             <th>Nama</th>
+             <th>NIM</th>
+            <th>Jurusan</th>
+             </tr>
+        </thead>
+        <tbody>
+        <!-- Data akan dimasukkan di sini melalui JavaScript -->
+        </tbody>
+    </table>
+</div>
+    <footer>
+    <p>&copy; 2024 Daftar Absensi</p>
+    </footer>
+    <script src="script2.js"></script>
+    </body>
+</html>
+    
